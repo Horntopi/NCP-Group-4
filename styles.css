@@ -16,6 +16,11 @@ body {
     overflow: hidden; /* Prevents scrolling */
 }
 
+#home, #case-studies, #pneumondef, #CASESC, #CASESC2, #Problems, #pneumonia {
+    height: 100vh; /* Ensure each section takes the full height of the viewport */
+    overflow: hidden; /* Prevent scrollbars in individual sections */
+}
+
 header {
     background: #007BFF;
     color: white;
