@@ -1,3 +1,27 @@
+html, body {
+    font-family: 'MagnoliaScript', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('1.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgb(39, 11, 11);
+    margin-top: 20px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
 @font-face {
     font-family: 'MagnoliaScript';
     src: url('MagnoliaScript.ttf') format('truetype');
