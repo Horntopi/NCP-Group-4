@@ -17,10 +17,14 @@
         }
 
 
+
+
         .container {
             max-width: 800px;
             margin: auto;
         }
+
+
 
 
         .section { display: none; }
@@ -64,12 +68,16 @@
 <body>
 
 
+
+
     <!-- Home Section -->
     <div id="home" class="section active" data-bg="url('1.jpg')">
         <h1></h1>
         <p></p>
         <div class="casestud" onclick="showSection('case-studies')"></div>
     </div>
+
+
 
 
     <!-- Case Study Selection -->
@@ -81,6 +89,7 @@
         <div class="btn4" onclick="showSection('home')">Back</div>
     </div>
 
+
     <!-- Pneumonia Definition -->
     <div id="pneumondef" class="section" data-bg="url('3.jpg')">
         <h1></h1>
@@ -88,6 +97,7 @@
         <div class="btn7" onclick="showSection('CASESC')">NEXT</div>
         <div class="btn6" onclick="showSection('case-studies')">BACK</div>
     </div>    
+
 
     <!-- CASE SCENARIO 1-->
     <div id="CASESC" class="section" data-bg="url('4.jpg')">
@@ -97,24 +107,128 @@
         <div class="btn9" onclick="showSection('pneumondef')">Back</div>
     </div>    
 
+
     <!-- CASE SCENARIO 2-->
     <div id="CASESC2" class="section" data-bg="url('5.jpg')">
         <h1></h1>
         <p></p>
         <div class="btn10" onclick="showSection('Problems')">NEXT</div>
         <div class="btn11" onclick="showSection('CASESC')">Back</div>
-    </div>   
+    </div>  
+
 
     <!-- SELECT A NURSING CARE PLAN-->
     <div id="Problems" class="section" data-bg="url('6.jpg')">
         <h1></h1>
         <p></p>
         <div class="btn12" onclick="showSection('pneumonia')"></div>
+        <div class="btn19" onclick="showSection('pneumonia2')"></div>
         <div class="btn13" onclick="showSection('CASESC2')"></div>
-    </div>   
+    </div>  
 
 <!-- Pneumonia Nursing Care Plan -->
 <div id="pneumonia" class="section" data-bg="url('7.jpg')">
+    <h1></h1>
+    <table border="1" width="100%">
+        <tr><th>Section</th><th>Details</th></tr>
+        <tr>
+            <td>Assessment</td>
+            <td><a href="#assessment2" class="toggle-btn">View</a></td>
+        </tr>
+        <tr>
+            <td>Diagnosis</td>
+            <td><a href="#diagnosis2" class="toggle-btn">View</a></td>
+        </tr>
+        <tr>
+            <td>Planning</td>
+            <td><a href="#planning2" class="toggle-btn">View</a></td>
+        </tr>
+        <tr>
+            <td>Intervention</td>
+            <td><a href="#intervention2" class="toggle-btn">View</a></td>
+        </tr>
+        <tr>
+            <td>Rationale</td>
+            <td><a href="#evaluation2" class="toggle-btn">View</a></td>
+        </tr>
+    </table>
+
+    <div id="assessment2" class="details">
+        <h3>Assessment Cues</h3>
+        <p><strong>S:</strong> The mother verbalized, “Naubo padin siya tas may kasamang plema.”</p>
+        <p><strong>O:</strong> T: 36.8°C, PR: 121 bpm, RR: 28 cpm, SpO2: 98%</p>
+        <p>(+) productive cough, (+) crackles on both sides</p>
+    </div>
+
+
+    <div id="diagnosis2" class="details">
+        <h3>Nursing Diagnosis</h3>
+        <p>Ineffective Airway Clearance r/t retained secretions, as evidenced by adventitious lung sounds (crackles).</p>
+    </div>
+
+
+    <div id="planning2" class="details">
+        <h3>Objectives of Care</h3>
+        <p><strong>Short Term:</strong> By the end of the 8-hour shift, the patient will have improved airway clearance as evidenced by reduced congestion, clearer breath sounds, and diminished crackles.</p>
+        <p><strong>Long Term:</strong> Within the next 2-3 weeks the patient will maintain a clear airway as evidenced by normal breath sounds, effective coughing, absence of congestion, and adequate oxygenation without respiratory distress.</p>
+    </div>
+
+
+    <div id="intervention2" class="details">
+        <h3>Plan of Interventions</h3>
+        <h3>Dx:</h3>
+        <p>- The nurse will monitor VS and INO every 4 hours. </p>
+        <p>- Monitor 02 SAT every 4 hours.</p>
+        <p>- Auscultate the lungs for abnormal sounds: crackles, wheezing, rhonchi.</p>
+        <p>- Monitor for signs of difficulty in breathing: cyanotic, use of accessory muscles, nasal flaring, chest retractions.</p>
+        <h3>Tx:</h3>
+        <p>- Perform CPT as needed.</p>
+        <p>- Administer medication for relief of respiratory tract infection: Disudrin 1mL drops and Salbutamol 1 nebule as prescribed by the physician.</p>
+        <p>- Administer antibiotics Ceftriaxone 869 mg IV as prescribed by the physician.</p>
+        <h3>Ed:</h3>
+        <p>- Encourage increased fluid intake.</p>
+        <p>- Educate the patient's parents on the proper way of functioning: Gently compress and release the bulb.</p>
+        <p>- Advise to watch out for signs of difficulty in breathing: paleness, use of accessory muscles, nasal flaring, chest retractions.</p>
+        <p>- Advice to gently do percussion/ tap the patients back as needed.</p>
+    </div>
+
+
+    <div id="evaluation2" class="details">
+        <h3>Rationale</h3>
+        <h3>Dx:</h3>
+        <h3>Monitor V/S and I & O</h3>
+        <p>- To assess and make sure the pt's VS stays within normal ranges and to track fluid balance and prevent and detect early signs of dehydration.</p>
+        <h3>Monitor O2 Sat</h3>
+        <p>- Check for signs of difficulty in breathing.</p>
+        <h3>Auscultate the lungs</h3>
+        <p>- To help detect fluid, airway narrowing, or mucus buildup, indicating respiratory issues.</p>
+        <h3>Monitor for signs of difficulty in breathing: </h3>
+        <p>- To help identify respiratory distress early, allowing timely intervention to prevent worsening of conditions.</p>
+        <h3>Tx:</h3>
+        <h3>Perform CPT as needed.</h3>
+        <p>- Aid in clearing mucus from the lungs, improving airflow and oxygenation.</p>
+        <h3>Administer medication</h3>
+        <p>- To reduce nasal congestion (Disudrin) and improve breathing by relaxing airways (Salbutamol).</p>
+        <h3>Administer antibiotics</h3>
+        <p>- To help fight bacterial infections.</p>
+        <h3>Ed:</h3>
+        <h3>Encourage increased fluid intake.</h3>
+        <p>- To avoid signs of dehydration.</p>
+        <h3>Educate the patient's parents</h3>
+        <p>- Help clear secretions, ensuring effective airway clearance and prevent difficulty in breathing.</p>
+        <h3>Advise to watch out for signs of difficulty</h3>
+        <p>- Allows early intervention, preventing complications and ensuring timely medical care.</p>
+        <h3>Advice to gently do percussion/ tap the patients back as needed.</h3>
+        <p>- To loosen the mucus in the lungs.</p>
+    </div>
+
+
+    <div class="btn5" onclick="showSection('Problems')"></div>
+    <div class="btn14" onclick="showSection('reference')"></div>
+</div>
+
+<!-- Pneumonia Nursing Care Plan -->
+<div id="pneumonia2" class="section" data-bg="url('8.jpg')">
     <h1></h1>
     <table border="1" width="100%">
         <tr><th>Section</th><th>Details</th></tr>
@@ -135,49 +249,111 @@
             <td><a href="#intervention" class="toggle-btn">View</a></td>
         </tr>
         <tr>
-            <td>Evaluation</td>
+            <td>Rationale</td>
             <td><a href="#evaluation" class="toggle-btn">View</a></td>
         </tr>
     </table>
 
     <div id="assessment" class="details">
         <h3>Assessment Cues</h3>
-        <p><strong>S:</strong> The mother verbalized, “Naubo padin siya tas may kasamang plema.”</p>
-        <p><strong>O:</strong> T: 36.8°C, PR: 121 bpm, RR: 28 cpm, SpO2: 98%</p>
-        <p>(+) productive cough, (+) crackles on both sides</p>
+        <p><strong>S:</strong> The mother verbalized, “Malambot tae niya.”</p>
+        <p><strong>O:</strong> T: 36.8°C, PR: 121 bpm, RR: 28 cpm</p>
     </div>
 
     <div id="diagnosis" class="details">
         <h3>Nursing Diagnosis</h3>
-        <p>Ineffective Airway Clearance r/t retained secretions, as evidenced by adventitious lung sounds (crackles).</p>
+        <p>Risk for electrolyte imbalance r/t excessive fluid loss secondary to diarrhea.</p>
     </div>
 
     <div id="planning" class="details">
         <h3>Objectives of Care</h3>
-        <p><strong>Short Term:</strong> By the end of the 8-hour shift, the patient will have improved airway clearance.</p>
-        <p><strong>Long Term:</strong> Within 2-3 weeks, the patient will maintain a clear airway.</p>
+        <p><strong>Short Term:</strong> Within the 8-hour shift, the patient will maintain adequate hydration as evidenced by normal urine output, moist mucous membranes, and stable vital signs.</p>
+        <p><strong>Long Term:</strong> Within the next 2-3 days, the patient will maintain balanced electrolytes and prevent further fluid loss.</p>
     </div>
 
     <div id="intervention" class="details">
         <h3>Plan of Interventions</h3>
-        <p>- Monitor VS and I&O every 4 hours.</p>
-        <p>- Administer prescribed medications (Disudrin, Salbutamol, Ceftriaxone).</p>
-        <p>- Perform CPT as needed.</p>
-        <p>- Educate parents on signs of respiratory distress.</p>
+        <h3>Dx:</h3>
+        <p>- The nurse will monitor VS and INO every 4 hours. </p>
+        <p>- The nurse will monitor for signs of dehydration such as decreased urine output, dry mucous membranes, dry skin, and fatigue.</p>
+        <p>- The nurse will monitor electrolyte levels.</p>
+        <p>- The nurse will monitor laboratory values, including serum electrolytes (sodium, potassium, chloride), blood urea nitrogen (BUN), and creatinine.</p>
+        <p>- The nurse will monitor for any changes in the child's weight.</p>
+        <h3>Tx:</h3>
+        <p>- The nurse will maintain an environment of comfort and warmth, using appropriate clothing or blankets</p>
+        <p>- The nurse will encourage a balanced diet while avoiding high-sugar and high-fat foods to prevent worsening of diarrhea</p>
+        <p>- The nurse will provide medications as prescribed by the physician.</p>
+        <p>- The nurse will administer IV fluids as prescribed by the physician.</p>
+        <h3>Ed:</h3>
+        <p>- The nurse will encouraged to increase fluid intake.</p>
+        <p>- The nurse will advise parents to report early signs of dehydration</p>
+        <p>- The nurse will instruct parents on proper handwashing techniques before and after diaper changes and feeding times.</p>
+        <p>- The nurse will instruct parents to limit the use of fruit juices or sugary beverages during the child's recovery phase.</p>
     </div>
+
 
     <div id="evaluation" class="details">
         <h3>Rationale</h3>
-        <p>- To ensure normal VS and track fluid balance.</p>
-        <p>- Medications help reduce congestion and fight infection.</p>
-        <p>- CPT helps clear mucus.</p>
-        <p>- Early education prevents complications.</p>
+        <h3>Dx:</h3>
+        <h3>Monitor V/S and I & O</h3>
+        <p>- To assess and make sure the pt's VS stays within normal ranges and to track fluid balance and prevent and detect early signs of dehydration.</p>
+        <h3>Monitor for signs of dehydration</h3>
+        <p>- To help detect fluid loss early, preventing complications like kidney issues and low blood pressure.</p>
+        <h3>Monitor Electrolyte Levels.</h3>
+        <p>- To help detect imbalances that can affect heart function, nerve signaling, and muscle contractions.</p>
+        <h3>Monitor for signs of difficulty in breathing: </h3>
+        <p>- To help identify respiratory distress early, allowing timely intervention to prevent worsening of conditions.</p>
+        <h3>Monitor laboratory values </h3>
+        <p>- These labs help assess electrolyte levels and kidney function, both of which may be affected by fluid loss from diarrhea.</p>
+        <h3>Monitor for any changes in the child's weight </h3>
+        <p>- Monitoring weight regularly helps track hydration status.</p>
+        <h3>Tx:</h3>
+        <h3>Maintain an environment of comfort and warmth</h3>
+        <p>- Fever or dehydration can cause the child to feel cold, so warmth ensures comfort and helps with temperature regulation.</p>
+        <h3>Encourage a balanced diet while avoiding high-sugar and high-fat foods to prevent worsening of diarrhea</h3>
+        <p>- Offering a balanced diet helps provide the necessary nutrients for recovery. High-sugar foods can worsen diarrhea, and fatty foods can be harder to digest.</p>
+        <h3>Provide medications as prescribed by the physician.</h3>
+        <p>- Medications may help manage the symptoms of diarrhea or restore normal gut flora.</p>
+        <h3>Administer IV fluids</h3>
+        <p>- To restore hydration, maintain electrolyte balance, and prevent complications from dehydration.</p>
+        <h3>Ed:</h3>
+        <h3>Encourage increased fluid intake.</h3>
+        <p>- To avoid signs of dehydration.</p>
+        <h3>Advise parents to report early signs of dehydration</h3>
+        <p>- To aid in early intervention</p>
+        <h3>Instruct parents on proper handwashing techniques before and after diaper changes and feeding times.</h3>
+        <p>- Good hygiene practices can help prevent the spread of infections that could be causing the diarrhea and also reduce the risk of reinfection.</p>
+        <h3>Instruct parents to limit the use of fruit juices or sugary beverages during the child's recovery phase.</h3>
+        <p>- Sugary drinks can worsen diarrhea by drawing water into the intestines. This increases the risk of dehydration and should be avoided while the child recovers.</p>
     </div>
 
-    <div class="btn5" onclick="showSection('Problems')">Back to Select</div>
+    <div class="btn22" onclick="showSection('Problems')"></div>
+    <div class="btn23" onclick="showSection('reference')"></div>
 </div>
 
+   
 
+
+    <!-- References -->
+    <div id="reference" class="section" data-bg="url('9.jpg')">
+        <h1></h1>
+        <p></p>
+        <div class="btn15" onclick="showSection('taskings')"></div>
+        <div class="btn16" onclick="showSection('Problems')"></div>
+    </div>    
+
+
+    <!-- Tasking and Contributions -->
+    <div id="taskings" class="section" data-bg="url('10.jpg')">
+        <h1></h1>
+        <p></p>
+        <div class="btn17" onclick="showSection('home')"></div>
+        <div class="btn18" onclick="showSection('reference')"></div>
+    </div>
+
+
+   
+   
     <script>
         function showSection(sectionId) {
             var sections = document.getElementsByClassName("section");
@@ -189,10 +365,14 @@
             activeSection.classList.add("active");
 
 
+
+
             // Change background dynamically
             var newBg = activeSection.getAttribute("data-bg");
             document.body.style.backgroundImage = newBg;
         }
+
+
 
 
         function toggleDetails(id) {
@@ -202,10 +382,7 @@
     </script>
 
 
+
+
 </body>
 </html>
-
-
-
-
-

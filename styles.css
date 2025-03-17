@@ -1,51 +1,6 @@
-html, body {
-    font-family: 'MagnoliaScript', cursive;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    background-image: url('1.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    height: 100%;
-    overflow: hidden;
-}
-
-.container {
-    width: 100%;
-    padding: 20px;
-    background: white;
-    box-shadow: 0px 0px 10px rgb(39, 11, 11);
-    margin-top: 20px;
-    border-radius: 8px;
-    position: relative;
-    z-index: 1;
-}
-
 @font-face {
     font-family: 'MagnoliaScript';
     src: url('MagnoliaScript.ttf') format('truetype');
-}
-
-/* For tablets */
-@media screen and (min-width: 768px) {
-    .container {
-        width: 90%;
-    }
-}
-
-/* For desktops */
-@media screen and (min-width: 1024px) {
-    .container {
-        width: 80%;
-    }
-}
-
-/* For large screens (e.g., widescreens) */
-@media screen and (min-width: 1200px) {
-    .container {
-        width: 70%;
-    }
 }
 
 /* Basic Page Styles */
@@ -59,11 +14,6 @@ body {
     background-position: center; /* Center the image */
     text-align: center;
     overflow: hidden; /* Prevents scrolling */
-}
-
-#home, #case-studies, #pneumondef, #CASESC, #CASESC2, #Problems, #pneumonia {
-    height: 100vh; /* Ensure each section takes the full height of the viewport */
-    overflow: hidden; /* Prevent scrollbars in individual sections */
 }
 
 header {
@@ -240,17 +190,13 @@ header {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px;
-    background: #033073;
+    background: #03307300;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: 0.3s;
     object-fit: contain;
     position: relative; /* Use relative positioning */
-    top: 190px;
-    left: -135px;
-    width: 24%;
-    height: 26vh;
     background-image: url('NCPprob.png');
     background-size: cover;
     background-position: center;
@@ -260,11 +206,18 @@ header {
     text-align: center;
     padding: 20px;
 }
+#Problems .btn12 {
+    top: 220px;
+    left: 63px;
+    width: 24%;
+    height: 26vh;
+}
 #Problems .btn12:hover {
     background-color: #0b77e9;
     transform: scale(1.2);
     cursor: pointer;
 }
+
 
 /* Button Styles */
 #Problems .btn13 {
@@ -278,20 +231,48 @@ header {
     transition: 0.3s;
     object-fit: contain;
     position: relative; /* Use relative positioning */
-    top: 470px;
-    left: -820px;
-    width: 12%;
-    height: 30vh;
+    top: 470px; /* Adjusted to prevent overlap with btn12 */
+    left: -1035px; /* Adjusted to align with btn12 */
+    width: 11%; /* Set width similar to btn12 */
+    height: 26vh;
     background-image: url('bunny.png');
     background-size: cover;
     background-position: center;
     border: none;
     z-index: 1;
-    transition: all 0.5s ease-in-out;
     text-align: center;
     padding: 20px;
 }
 #Problems .btn13:hover {
+    background-color: #0b77e9;
+    transform: scale(1.1);
+}
+
+/* Button Styles */
+#Problems .btn19 {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background: #03307300;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    object-fit: contain;
+    position: relative; /* Use relative positioning */
+    top: 220px; /* Adjusted to prevent overlap with btn12 */
+    left: 200px; /* Adjusted to align with btn12 */
+    width: 24%;
+    height: 26vh;
+    background-image: url('NCPprob.png');
+    background-size: cover;
+    background-position: center;
+    border: none;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+}
+#Problems .btn19:hover {
     background-color: #0b77e9;
     transform: scale(1.1);
 }
@@ -318,11 +299,11 @@ header {
     transition: 0.3s;
     object-fit: contain;
     position: relative; /* Use relative positioning */
-    top: 490px;
-    left: -490px;
-    width: 8%;
+    top: 530px;
+    left: -635px;
+    width: 7%;
     height: 15vh;
-    background-image: url('lion.png');
+    background-image: url('lion.jpg');
     background-size: cover;
     background-position: center;
     border: none;
@@ -345,12 +326,204 @@ header {
     margin: 10px;
 }
 
-.btn5:hover, .btn4:hover {
+.btn5:hover, .btn4:hover, .btn14:hover {
     background-color: rgba(0, 123, 255, 1);
     transform: scale(1.1);
 }
 
-.btn5:focus, .btn4:focus {
+.btn5:focus, .btn4:focus, .btn14:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+}
+
+/* Back Button on Pneumonia Nursing Care Plan */
+#pneumonia .btn14 {
+    display: inline-flex;
+    padding: 20px; /* Removed conflicting padding */
+    margin: 10px;
+    background: transparent; /* Fixed invalid background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    position: absolute; /* Changed to absolute */
+    top: 600px;
+    left: 1290px;
+    width: 9%;
+    height: 16vh;
+    background-image: url('panda.jpg');
+    background-size: cover;
+    background-position: center;
+    border: none;
+    z-index: 999; /* Increased z-index */
+    text-align: center;
+}
+
+/* Back Button on Pneumonia Nursing Care Plan */
+#reference .btn15 {
+    display: inline-flex;
+    padding: 20px; /* Removed conflicting padding */
+    margin: 10px;
+    background: transparent; /* Fixed invalid background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    position: absolute; /* Changed to absolute */
+    top: 540px;
+    left: 1210px;
+    width: 13%;
+    height: 24vh;
+    background-image: url('teddy.jpg');
+    background-size: cover;
+    background-position: center;
+    border: none;
+    z-index: 999; /* Increased z-index */
+    text-align: center;
+}
+#reference .btn16 {
+    display: inline-flex;
+    padding: 20px; /* Removed conflicting padding */
+    margin: 10px;
+    background: transparent; /* Fixed invalid background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    position: absolute; /* Changed to absolute */
+    top: 525px;
+    left: 98px;
+    width: 9%;
+    height: 23vh;
+    background-image: url('clown.jpg');
+    background-size: cover;
+    background-position: center;
+    border: none;
+    z-index: 999; /* Increased z-index */
+    text-align: center;
+}
+
+.btn15:hover, .btn16:hover {
+    background-color: rgba(0, 123, 255, 1);
+    transform: scale(1.1);
+}
+.btn15:focus, .btn16:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+}
+
+/* Back Button on Pneumonia Nursing Care Plan */
+#pneumonia2 .btn22 {
+    display: inline-flex;
+    padding: 10px 20px;
+    margin: 10px;
+    background: #03307300;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    object-fit: contain;
+    position: relative; /* Use relative positioning */
+    top: 530px;
+    left: -635px;
+    width: 7%;
+    height: 15vh;
+    background-image: url('lion.jpg');
+    background-size: cover;
+    background-position: center;
+    border: none;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    padding: 20px;
+}
+
+#pneumonia2 .btn23 {
+    display: inline-flex;
+    padding: 20px; /* Removed conflicting padding */
+    margin: 10px;
+    background: transparent; /* Fixed invalid background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    position: absolute; /* Changed to absolute */
+    top: 600px;
+    left: 1290px;
+    width: 9%;
+    height: 16vh;
+    background-image: url('panda.jpg');
+    background-size: cover;
+    background-position: center;
+    border: none;
+    z-index: 999; /* Increased z-index */
+    text-align: center;
+}
+
+.btn22:hover, .btn23:hover{
+    background-color: rgba(0, 123, 255, 1);
+    transform: scale(1.1);
+}
+
+.btn22:focus, .btn23:focus{
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+}
+
+/* Back Button on Pneumonia Nursing Care Plan */
+#taskings .btn18 {
+    display: inline-flex;
+    padding: 10px 20px;
+    margin: 10px;
+    background: #03307300;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    object-fit: contain;
+    position: relative; /* Use relative positioning */
+    top: -80px;
+    left: -638px;
+    width: 9%;
+    height: 15vh;
+    background-image: url('Bird.jpg');
+    background-size: cover;
+    background-position: center;
+    border: none;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    padding: 20px;
+}
+
+#taskings .btn17 {
+    display: inline-flex;
+    padding: 20px; /* Removed conflicting padding */
+    margin: 10px;
+    background: transparent; /* Fixed invalid background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    position: absolute; /* Changed to absolute */
+    top: 539px;
+    left: 1130px;
+    width: 17%;
+    height: 21.5vh;
+    background-image: url('Longneck.jpg');
+    background-size: cover;
+    background-position: center;
+    border: none;
+    z-index: 999; /* Increased z-index */
+    text-align: center;
+}
+
+.btn18:hover, .btn17:hover{
+    background-color: rgba(0, 123, 255, 1);
+    transform: scale(1.1);
+}
+
+.btn18:focus, .btn17:focus{
     outline: none;
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
 }
@@ -376,12 +549,12 @@ header {
 
 /* Table Styles for Pneumonia Nursing Care Plan */
 table {
-    width: 754px;
+    width: 749px;
     border-collapse: collapse;
     margin-top: 10px;
     position: absolute;
-    top: 193.5px;
-    left: 50px; 
+    top: 186px;
+    left: 53px; 
     font-size: 20px;
     font-family: 'MagnoliaScript', cursive;
 }
@@ -391,7 +564,7 @@ table, th, td {
 }
 
 th, td {
-    padding: 16.4px;
+    padding: 22px;
     text-align: center;
 }
 
@@ -473,6 +646,14 @@ tr { height: 50px; }
 #planning { top: 120px; left: 1060px; max-width: 408px; border-color: #020305; border-radius: 5%; font-family: 'MagnoliaScript', cursive; }
 #intervention { top: 120px; left: 1060px; max-width: 408px; border-color: #020305; border-radius: 5%; font-family: 'MagnoliaScript', cursive; }
 #evaluation { top: 120px; left: 1060px; max-width: 408px; border-color: #020305; border-radius: 5%; font-family: 'MagnoliaScript', cursive; }
+
+/* Duplicated Section Styles (for the second set of sections) */
+#assessment2 { top: 120px; left: 1060px; max-width: 408px; border-color: #020305; border-radius: 5%; font-family: 'MagnoliaScript', cursive; }
+#diagnosis2 { top: 120px; left: 1060px; max-width: 408px; border-color: #020305; border-radius: 5%; font-family: 'MagnoliaScript', cursive; }
+#planning2 { top: 120px; left: 1060px; max-width: 408px; border-color: #020305; border-radius: 5%; font-family: 'MagnoliaScript', cursive; }
+#intervention2 { top: 120px; left: 1060px; max-width: 408px; border-color: #020305; border-radius: 5%; font-family: 'MagnoliaScript', cursive; }
+#evaluation2 { top: 120px; left: 1060px; max-width: 408px; border-color: #020305; border-radius: 5%; font-family: 'MagnoliaScript', cursive; }
+
 
 /* Hide checkboxes if used */
 .toggle-checkbox { display: none; }
