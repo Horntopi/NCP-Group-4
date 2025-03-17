@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nursing Care Plan for Toddlers</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: background 0.5s ease-in-out; /* Smooth transition */
+        }
+
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+
+        .section { display: none; }
+        .active { display: block; }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff00;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .casestud {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1783f600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .btn5 {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .btn:hover { background-color: #0056b3; }
+        .toggle-btn { cursor: pointer; background-color: #007bff; color: white; padding: 5px 10px; border: none; border-radius: 5px; }
+        .toggle-btn:hover { background-color: #0056b3; }
+        .details { display: none; padding: 10px; background: #f1f1f1; margin-top: 5px; text-align: left; }
+    </style>
+</head>
+<body>
+
+
+    <!-- Home Section -->
+    <div id="home" class="section active" data-bg="url('1.jpg')">
+        <h1></h1>
+        <p></p>
+        <div class="casestud" onclick="showSection('case-studies')"></div>
+    </div>
+
+
+    <!-- Case Study Selection -->
+    <div id="case-studies" class="section" data-bg="url('2.jpg')">
+        <h1></h1>
+        <div class="btn" onclick="showSection('pneumondef')"></div>
+        <div class="btn2" style="background-color: rgba(128, 128, 128, 0); cursor: not-allowed;"></div>
+        <div class="btn3" style="background-color: rgba(128, 128, 128, 0); cursor: not-allowed;"></div>
+        <div class="btn4" onclick="showSection('home')">Back</div>
+    </div>
+
+    <!-- Pneumonia Definition -->
+    <div id="pneumondef" class="section" data-bg="url('3.jpg')">
+        <h1></h1>
+        <p></p>
+        <div class="btn7" onclick="showSection('CASESC')">NEXT</div>
+        <div class="btn6" onclick="showSection('case-studies')">BACK</div>
+    </div>    
+
+    <!-- CASE SCENARIO 1-->
+    <div id="CASESC" class="section" data-bg="url('4.jpg')">
+        <h1></h1>
+        <p></p>
+        <div class="btn8" onclick="showSection('CASESC2')">NEXT</div>
+        <div class="btn9" onclick="showSection('pneumondef')">Back</div>
+    </div>    
+
+    <!-- CASE SCENARIO 2-->
+    <div id="CASESC2" class="section" data-bg="url('5.jpg')">
+        <h1></h1>
+        <p></p>
+        <div class="btn10" onclick="showSection('Problems')">NEXT</div>
+        <div class="btn11" onclick="showSection('CASESC')">Back</div>
+    </div>   
+
+    <!-- SELECT A NURSING CARE PLAN-->
+    <div id="Problems" class="section" data-bg="url('6.jpg')">
+        <h1></h1>
+        <p></p>
+        <div class="btn12" onclick="showSection('pneumonia')"></div>
+        <div class="btn13" onclick="showSection('CASESC2')"></div>
+    </div>   
+
+<!-- Pneumonia Nursing Care Plan -->
+<div id="pneumonia" class="section" data-bg="url('7.jpg')">
+    <h1></h1>
+    <table border="1" width="100%">
+        <tr><th>Section</th><th>Details</th></tr>
+        <tr>
+            <td>Assessment</td>
+            <td><a href="#assessment" class="toggle-btn">View</a></td>
+        </tr>
+        <tr>
+            <td>Diagnosis</td>
+            <td><a href="#diagnosis" class="toggle-btn">View</a></td>
+        </tr>
+        <tr>
+            <td>Planning</td>
+            <td><a href="#planning" class="toggle-btn">View</a></td>
+        </tr>
+        <tr>
+            <td>Intervention</td>
+            <td><a href="#intervention" class="toggle-btn">View</a></td>
+        </tr>
+        <tr>
+            <td>Evaluation</td>
+            <td><a href="#evaluation" class="toggle-btn">View</a></td>
+        </tr>
+    </table>
+
+    <div id="assessment" class="details">
+        <h3>Assessment Cues</h3>
+        <p><strong>S:</strong> The mother verbalized, “Naubo padin siya tas may kasamang plema.”</p>
+        <p><strong>O:</strong> T: 36.8°C, PR: 121 bpm, RR: 28 cpm, SpO2: 98%</p>
+        <p>(+) productive cough, (+) crackles on both sides</p>
+    </div>
+
+    <div id="diagnosis" class="details">
+        <h3>Nursing Diagnosis</h3>
+        <p>Ineffective Airway Clearance r/t retained secretions, as evidenced by adventitious lung sounds (crackles).</p>
+    </div>
+
+    <div id="planning" class="details">
+        <h3>Objectives of Care</h3>
+        <p><strong>Short Term:</strong> By the end of the 8-hour shift, the patient will have improved airway clearance.</p>
+        <p><strong>Long Term:</strong> Within 2-3 weeks, the patient will maintain a clear airway.</p>
+    </div>
+
+    <div id="intervention" class="details">
+        <h3>Plan of Interventions</h3>
+        <p>- Monitor VS and I&O every 4 hours.</p>
+        <p>- Administer prescribed medications (Disudrin, Salbutamol, Ceftriaxone).</p>
+        <p>- Perform CPT as needed.</p>
+        <p>- Educate parents on signs of respiratory distress.</p>
+    </div>
+
+    <div id="evaluation" class="details">
+        <h3>Rationale</h3>
+        <p>- To ensure normal VS and track fluid balance.</p>
+        <p>- Medications help reduce congestion and fight infection.</p>
+        <p>- CPT helps clear mucus.</p>
+        <p>- Early education prevents complications.</p>
+    </div>
+
+    <div class="btn5" onclick="showSection('Problems')">Back to Select</div>
+</div>
+
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName("section");
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove("active");
+            }
+           
+            var activeSection = document.getElementById(sectionId);
+            activeSection.classList.add("active");
+
+
+            // Change background dynamically
+            var newBg = activeSection.getAttribute("data-bg");
+            document.body.style.backgroundImage = newBg;
+        }
+
+
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+        }
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+
