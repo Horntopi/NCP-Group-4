@@ -16,16 +16,10 @@
             transition: background 0.5s ease-in-out; /* Smooth transition */
         }
 
-
-
-
         .container {
             max-width: 800px;
             margin: auto;
         }
-
-
-
 
         .section { display: none; }
         .active { display: block; }
@@ -67,18 +61,12 @@
 </head>
 <body>
 
-
-
-
     <!-- Home Section -->
     <div id="home" class="section active" data-bg="url('1.jpg')">
         <h1></h1>
         <p></p>
         <div class="casestud" onclick="showSection('case-studies')"></div>
     </div>
-
-
-
 
     <!-- Case Study Selection -->
     <div id="case-studies" class="section" data-bg="url('2.jpg')">
@@ -89,7 +77,6 @@
         <div class="btn4" onclick="showSection('home')">Back</div>
     </div>
 
-
     <!-- Pneumonia Definition -->
     <div id="pneumondef" class="section" data-bg="url('3.jpg')">
         <h1></h1>
@@ -97,7 +84,6 @@
         <div class="btn7" onclick="showSection('CASESC')">NEXT</div>
         <div class="btn6" onclick="showSection('case-studies')">BACK</div>
     </div>    
-
 
     <!-- CASE SCENARIO 1-->
     <div id="CASESC" class="section" data-bg="url('4.jpg')">
@@ -107,7 +93,6 @@
         <div class="btn9" onclick="showSection('pneumondef')">Back</div>
     </div>    
 
-
     <!-- CASE SCENARIO 2-->
     <div id="CASESC2" class="section" data-bg="url('5.jpg')">
         <h1></h1>
@@ -115,7 +100,6 @@
         <div class="btn10" onclick="showSection('Problems')">NEXT</div>
         <div class="btn11" onclick="showSection('CASESC')">Back</div>
     </div>  
-
 
     <!-- SELECT A NURSING CARE PLAN-->
     <div id="Problems" class="section" data-bg="url('6.jpg')">
@@ -160,12 +144,10 @@
         <p>(+) productive cough, (+) crackles on both sides</p>
     </div>
 
-
     <div id="diagnosis2" class="details">
         <h3>Nursing Diagnosis</h3>
         <p>Ineffective Airway Clearance r/t retained secretions, as evidenced by adventitious lung sounds (crackles).</p>
     </div>
-
 
     <div id="planning2" class="details">
         <h3>Objectives of Care</h3>
@@ -173,13 +155,12 @@
         <p><strong>Long Term:</strong> Within the next 2-3 weeks the patient will maintain a clear airway as evidenced by normal breath sounds, effective coughing, absence of congestion, and adequate oxygenation without respiratory distress.</p>
     </div>
 
-
     <div id="intervention2" class="details">
         <h3>Plan of Interventions</h3>
         <h3>Dx:</h3>
+        <p>- Auscultate the lungs for abnormal sounds: crackles, wheezing, rhonchi.</p>
         <p>- The nurse will monitor VS and INO every 4 hours. </p>
         <p>- Monitor 02 SAT every 4 hours.</p>
-        <p>- Auscultate the lungs for abnormal sounds: crackles, wheezing, rhonchi.</p>
         <p>- Monitor for signs of difficulty in breathing: cyanotic, use of accessory muscles, nasal flaring, chest retractions.</p>
         <h3>Tx:</h3>
         <p>- Perform CPT as needed.</p>
@@ -192,16 +173,15 @@
         <p>- Advice to gently do percussion/ tap the patients back as needed.</p>
     </div>
 
-
     <div id="evaluation2" class="details">
         <h3>Rationale</h3>
         <h3>Dx:</h3>
+        <h3>Auscultate the lungs</h3>
+        <p>- To help detect fluid, airway narrowing, or mucus buildup, indicating respiratory issues.</p>
         <h3>Monitor V/S and I & O</h3>
         <p>- To assess and make sure the pt's VS stays within normal ranges and to track fluid balance and prevent and detect early signs of dehydration.</p>
         <h3>Monitor O2 Sat</h3>
         <p>- Check for signs of difficulty in breathing.</p>
-        <h3>Auscultate the lungs</h3>
-        <p>- To help detect fluid, airway narrowing, or mucus buildup, indicating respiratory issues.</p>
         <h3>Monitor for signs of difficulty in breathing: </h3>
         <p>- To help identify respiratory distress early, allowing timely intervention to prevent worsening of conditions.</p>
         <h3>Tx:</h3>
@@ -268,7 +248,7 @@
     <div id="planning" class="details">
         <h3>Objectives of Care</h3>
         <p><strong>Short Term:</strong> Within the 8-hour shift, the patient will maintain adequate hydration as evidenced by normal urine output, moist mucous membranes, and stable vital signs.</p>
-        <p><strong>Long Term:</strong> Within the next 2-3 days, the patient will maintain balanced electrolytes and prevent further fluid loss.</p>
+        <p><strong>Long Term:</strong> Within the next 2 weeks, the patient will maintain balanced electrolytes and prevent further fluid loss.</p>
     </div>
 
     <div id="intervention" class="details">
@@ -290,7 +270,6 @@
         <p>- The nurse will instruct parents on proper handwashing techniques before and after diaper changes and feeding times.</p>
         <p>- The nurse will instruct parents to limit the use of fruit juices or sugary beverages during the child's recovery phase.</p>
     </div>
-
 
     <div id="evaluation" class="details">
         <h3>Rationale</h3>
@@ -331,9 +310,6 @@
     <div class="btn23" onclick="showSection('reference')"></div>
 </div>
 
-   
-
-
     <!-- References -->
     <div id="reference" class="section" data-bg="url('9.jpg')">
         <h1></h1>
@@ -341,7 +317,6 @@
         <div class="btn15" onclick="showSection('taskings')"></div>
         <div class="btn16" onclick="showSection('Problems')"></div>
     </div>    
-
 
     <!-- Tasking and Contributions -->
     <div id="taskings" class="section" data-bg="url('10.jpg')">
@@ -351,9 +326,6 @@
         <div class="btn18" onclick="showSection('reference')"></div>
     </div>
 
-
-   
-   
     <script>
         function showSection(sectionId) {
             var sections = document.getElementsByClassName("section");
@@ -364,25 +336,16 @@
             var activeSection = document.getElementById(sectionId);
             activeSection.classList.add("active");
 
-
-
-
             // Change background dynamically
             var newBg = activeSection.getAttribute("data-bg");
             document.body.style.backgroundImage = newBg;
         }
-
-
-
 
         function toggleDetails(id) {
             var details = document.getElementById(id);
             details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
         }
     </script>
-
-
-
 
 </body>
 </html>
